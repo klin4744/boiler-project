@@ -7,6 +7,9 @@ const db = require('../db');
 const User = db.define(
    'user',
    {
+      googleId: {
+         type: Sequelize.STRING,
+      },
       email: {
          type: Sequelize.STRING,
          unique: true,
